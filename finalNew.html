@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initila-width=1.0">
+        <script src="script.js"></script>
+        <title>Result</title>
+    </head>
+    <body class="MainBody">
+        <div class="container">
+            <header>
+                <h1>Welcome to DailyQuiz&ensp;<sub style="font-size: 15px; float: inherit">By GAK community</sub></h1>
+            </header>
+            <div class="Menu">&ensp;
+                <a href="index.html">&ensp;Home&ensp;</a>&ensp;&ensp;
+                <a href="previousQ.html">&ensp;PreviousQuiz&ensp;</a>&ensp;&ensp;
+                <a href="about.html">&ensp;About&ensp;</a>&ensp;&ensp;
+                <a href="contact.html">&ensp;Contact us&ensp;</a>&ensp;
+            </div>
+            <div class="Content">
+                <br><br><br>
+                <div class="container1">
+            <div class="empty"></div>
+            <nav class="innerDiv" style="font-size: 20px;">
+                <p>Correct: <span id="resultApp"></span>
+                    <script>
+                        document.getElementById("resultApp").innerHTML=localStorage.getItem("opC");
+                    </script>
+                </p>
+                <p>Wrong: <span id="resultReas"></span>
+                    <script>
+                        document.getElementById("resultReas").innerHTML=localStorage.getItem("opW");
+                    </script>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!--<table align="center">
+<tr>
+<td></td>
+<td>
+<input type="button" value="submit" onclick="total()" align="center">
+<input type="button" value="refresh" onclick="window.location.reload()" align="center">
+
+</td></tr>
+</table>
+                <p id="correct"></p>
+<p id="wrong"> </p>
+                </p>-->
+                    <p style="font-size: 25px">Thank You!</p>
+            </nav>
+                    <p style="font-size: 19px">For Answers <a href="Day-2%20.pdf" class="KeyAnc" download="Day-2Key.pdf">Click here</a></p> &ensp;<br>
+            
+            
+        </div>
+            </div>
+            <footer>Copyrights &copy; 2020 GAK community <span>:</span> Designed by GAK</footer>
+        </div>
+    </body>
+</html>
